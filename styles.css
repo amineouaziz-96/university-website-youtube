@@ -1,0 +1,17 @@
+/* Le menu <ul> est en ligne */
+.navbar ul {
+  display: flex;
+}
+
+/* Les liens du menu */
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none; /* souvent utile pour enlever le soulignement par défaut */
+}
+
+/* Effet au survol */
+.navbar a:hover {
+  border-bottom: 2px solid #fff;
+}
