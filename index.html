@@ -1,42 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>university website design easy tutorials</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design Easy Tutorials</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HERO HEADER SECTION -->
     <section class="header">
-        <nav>
-            <a href="index.html"><img src="images/about.jpg"></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
-                <ul>
-                    <li><a class="" href="">home</a></li>
-                    <li><a href="">about</a></li>
-                    <li><a href="">course</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">contact</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars"></i>
-        </nav>
-        
-       <div. class="text-box">
-        <h1>world's biggest university</h1>
-        <p>making website is now one of the easiest thing in the world. you
-            just need to learn html, css, <br> javascript and you are good to go.
+      <nav>
+        <a href="index.html"><img src="images/about.jpg" alt="logo" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Course</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Making website is now one of the easiest things in the world. You just
+          need to learn HTML, CSS, <br />JavaScript and you are good to go.
         </p>
-        <a href="" class="hero-btn">visit us to know more</a>
-
-    </div>
-
+        <a href="#" class="hero-btn">Visit us to know more</a>
+      </div>
     </section>
-    
-</body>
+
+    <!-- COURSES SECTION -->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Making website is now one of the easiest things in the world. You just
+            need to learn HTML, CSS, JavaScript and you are good to go.
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Making website is now one of the easiest things in the world. You just
+            need to learn HTML, CSS, JavaScript and you are good to go.
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Making website is now one of the easiest things in the world. You just
+            need to learn HTML, CSS, JavaScript and you are good to go.
+          </p>
+        </div>
+      </div>
+    </section>
+             /* campus*/
+            <section class="campus">
+        <h1>our global campus</h1>
+        <p>
+            Making website is now one of the easiest things in the world. You just
+            need to learn HTML, CSS, JavaScript and you are good to go.
+          </p>
+          <div class="row">
+            <div class="campus-col">
+                <img src="images/background.jpg">
+            </div>
+          </div>
+             </section>
+
+    <!-- JAVASCRIPT MENU TOGGLE -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
